@@ -63,7 +63,7 @@ public class SearchActivity extends AppCompatActivity {
 
                 OkHttpClient client = new OkHttpClient();
                 Request request = new Request.Builder()
-                        .url("10.0.0.6/SearchDB.php?username="+URL)
+                        .url("(ip address)/SearchDB.php?username="+URL)
                         .build();
                 try{
                     Response response = client.newCall(request).execute();
